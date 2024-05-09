@@ -116,7 +116,7 @@ Decision Trees served as a straightforward, interpretable model for sales foreca
 
 Based on the RMSE scores obtained from the cross-validation process, we can conclude that the XGBoost model outperforms the other three models with the lowest RMSE mean of 538.97, indicating that it is the most accurate in terms of prediction among the tested models for this dataset. The ensemble methods like XGBoost and Random Forest are more effective for this dataset compared to a single decision tree or a linear approach.
 
-![Comparison plot of ML Models](https://github.com/Nishieee/Store-Sales-Forecasting/blob/main/images/LR_TimeSeries.png)
+![Comparison plot of ML Models](https://github.com/Nishieee/Store-Sales-Forecasting/blob/main/images/Comaprison_models.png)
 
 ``
 
