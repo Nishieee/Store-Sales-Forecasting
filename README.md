@@ -1,70 +1,74 @@
 # Store Sales Forecasting 
 
-# Store Sales Forecasting
-
 ## Team 7: Nishita Matlani & Dhir Thacker
 
-This project focuses on forecasting retail sales to navigate the challenges of retail management in a fluctuating economic environment heavily dependent on oil prices.
+This project aims at creating a robust forecasting model to predict daily retail sales, enabling retailers to make informed decisions and optimize their operations in an economically volatile environment, primarily affected by fluctuating oil prices.
 
 ### Table of Contents
 1. [Introduction](#introduction)
-2. [Motivation](#motivation)
-3. [Goals](#goals)
-4. [Methodology](#methodology)
-5. [Dataset Description](#dataset-description)
-6. [Installation](#installation)
-7. [Usage](#usage)
-8. [Results and Analysis](#results-and-analysis)
-9. [Conclusion](#conclusion)
-10. [References](#references)
+2. [Project Motivation](#project-motivation)
+3. [Project Goals](#project-goals)
+4. [Methodological Approach](#methodological-approach)
+5. [Dataset Overview](#dataset-overview)
+6. [Setup and Installation](#setup-and-installation)
+7. [How to Use](#how-to-use)
+8. [Detailed Results and Analysis](#detailed-results-and-analysis)
+9. [Concluding Remarks](#concluding-remarks)
+10. [References and Additional Resources](#references-and-additional-resources)
 
 ---
 
 ## Introduction
 
-In Ecuador, where the economy is significantly influenced by oil prices, the retail sector faces challenges in matching supply with fluctuating demand. Our project develops predictive models that forecast retail sales by analyzing historical sales data, promotional activities, and external factors such as oil prices and holidays.
+This project is centered around the challenges of retail management in Ecuador, a country where the economy is highly influenced by oil prices. These economic fluctuations impact consumer purchasing power, creating a volatile market for retailers. Our forecasting models are designed to predict sales with high accuracy, using historical sales data intertwined with promotional activities and economic indicators like oil prices and holidays.
 
-## Motivation
+## Project Motivation
 
-The project aims to empower businesses to make informed decisions on inventory and promotions, adapting in real-time to market demands using data science and machine learning.
+The motivation behind this project is to empower retailers with predictive insights that allow them to stay ahead in a rapidly changing market. By integrating advanced data analytics and machine learning techniques, we transform raw data into actionable insights that drive strategic business decisions.
 
-## Goals
+## Project Goals
 
-Our objective is to create a predictive tool that offers daily sales predictions across various store fronts and product lines, optimizing operations and enhancing profitability.
+The goal is to develop a sophisticated predictive tool that not only adapts to but also anticipates market changes, providing clear, actionable daily sales predictions. This tool is expected to enhance operational efficiency and profitability across various retail outlets.
 
-## Methodology
+## Methodological Approach
 
-### Data Cleaning and Preprocessing
-- **Load and merge datasets:** Combine sales data, store information, transaction records, oil prices, and holiday/event data.
-- **Handle missing values and duplicates:** Ensure data quality by cleaning the dataset thoroughly before analysis.
+### Data Preparation
+- **Data Cleaning:** Initial steps include loading the data into a suitable format, removing duplicates, and correcting inconsistencies.
+- **Handling Missing Data:** Techniques such as interpolation for continuous variables and imputation for categorical variables are used to address gaps in the dataset.
 
 ### Exploratory Data Analysis (EDA)
-- Conduct a comprehensive EDA to identify key patterns and relationships in the data.
+- **Visual Analytics:** Utilizing plots like histograms, scatter plots, and box plots to understand distributions and relationships.
+- **Statistical Analysis:** Conducting correlation analysis and hypothesis testing to validate assumptions and insights.
 
 ### Feature Engineering
-- Develop features like 'Year', 'Month', 'Weekday', lag features, and rolling averages to improve model predictions.
+- **Temporal Features:** Incorporation of time-based features to capture seasonal and cyclical patterns.
+- **Advanced Features:** Developing lag features and rolling averages to better capture trends and smooth out noise in the data.
 
-### Modeling
-- Use models such as Linear Regression, Random Forest, Decision Trees, and XGBoost.
+### Model Development and Evaluation
+- **Model Selection:** Employing various statistical and machine learning models including Linear Regression, Random Forest, and XGBoost.
+- **Performance Metrics:** Using RMSE and MAE for quantitative model evaluation, alongside visual comparisons of predicted vs. actual sales data.
 
-### Model Evaluation
-- Evaluate models based on RMSE and MAE to determine the best performer.
+## Dataset Overview
 
-## Dataset Description
+We utilize a comprehensive set of data from various sources, structured into several CSV files as described below:
 
-We utilize five CSV files with a total of 14 different columns including store number, product type, sales data, and external factors like oil prices and holidays.
+### Data Files
+- `train.csv` - Training dataset with historical sales data.
+- `test.csv` - Test dataset used for model evaluation.
+- `sample_submission.csv` - A template for submitting predictions.
+- `stores.csv` - Information about store types and locations.
+- `oil.csv` - Daily oil prices as an economic indicator.
+- `holidays_events.csv` - Details on holidays and events affecting sales.
 
-### Files
-- `train.csv`
-- `test.csv`
-- `sample_submission.csv`
-- `stores.csv`
-- `oil.csv`
-- `holidays_events.csv`
+## Setup and Installation
 
-## Installation
+To set up the project environment:
 
 ```bash
+# Clone the repository
 git clone <repository-url>
+# Navigate to the project directory
 cd <repository-name>
+# Install required Python packages
 pip install -r requirements.txt
+
