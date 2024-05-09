@@ -120,6 +120,13 @@ Based on the RMSE scores obtained from the cross-validation process, we can conc
 
 ``
 
+# Project Team
+
+| Team Member   | Contribution     |
+| ------------- | ---------------- |
+| Nishita Matlani| ERD, Feature Engineering, Modelling|
+| Dhir Thacker | Data preparation, ERD|
+
 ## Setup and Installation
 
 To set up the project environment:
@@ -132,12 +139,6 @@ cd <repository-name>
 # Install required Python packages
 pip install -r requirements.txt
 
-# Project Team
-
-| Team Member   | Contribution     |
-| ------------- | ---------------- |
-| Nishita Matlani| ERD, Feature Engineering, Modelling|
-| Dhir Thacker | Data preparation, ERD|
 
 
 
